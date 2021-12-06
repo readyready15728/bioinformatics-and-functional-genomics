@@ -1,3 +1,5 @@
+[Context: installing edirect CLI utilities]
+
 The instructions in the book are outdated. Go figure! Instead I got the right
 idea [here](https://www.ncbi.nlm.nih.gov/books/NBK179288/), namely:
 

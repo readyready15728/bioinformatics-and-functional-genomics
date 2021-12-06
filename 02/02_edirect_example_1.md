@@ -1,3 +1,6 @@
+[Context: searching PubMed for articles by the author J. Pevsner including the
+term GNAQ]
+
 The book suggested `esearch -db pubmed -query "pevsner j AND gnaq" | efetch -format docsum`,
 with the following output:
 
