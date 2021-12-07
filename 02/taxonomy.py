@@ -6,7 +6,8 @@ import sys
 for line in sys.stdin:
     organism = line.rstrip()
 
-    esearch = subprocess.Popen(['esearch', '-db', 'taxonomy', '-query', f'{organism} [LNGE] AND family [RANK]', '<', '/dev/null'],
+    esearch = subprocess.Popen(['esearch', '-db', 'taxonomy', '-query', f'{organism} [LNGE] AND family [RANK]'],
+                               stdin=subprocess.DEVNULL,
                                stdout=subprocess.PIPE)
     efetch = subprocess.Popen(['efetch', '-format', 'docsum'],
                               stdin=esearch.stdout,
