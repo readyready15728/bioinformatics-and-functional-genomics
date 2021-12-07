@@ -26,7 +26,7 @@ that the process exited successfully.
 In addition, the FASTA results I was getting were of variable line length, so
 a fixed number of lines supplied to `head` when I don't know what I'm going to
 get makes no sense. I found a much less-known protein and output *all* the
-results into [snap-25.txt](snap-25.txt). (SNAP-25 is some sort of neural
+results into [`snap-25.txt`](snap-25.txt). (SNAP-25 is some sort of neural
 protein.) Here was the invocation:
 
 ```bash
