@@ -20,7 +20,8 @@ it certainly seems to be now. Granted, that may not have mattered on the
 author's system, assuming the inter-process communication in the full
 suggested pipeline `esearch -db protein -query "hemoglobin" | efetch -format
 fasta | head -6` has `head` wrapping up as soon as those first six lines
-showed up. That wasn't the case on my system though.
+showed up. That wasn't the case on my system though, and I wanted to ensure
+that the process exited successfully.
 
 In addition, the FASTA results I was getting were of variable line length, so
 a fixed number of lines supplied to `head` when I don't know what I'm going to
